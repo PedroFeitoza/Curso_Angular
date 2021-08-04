@@ -1,0 +1,18 @@
+
+<h1>
+  <i class="glyphicon"
+  [class.colorBlue]="!meuFavorito"
+  [class.colorRed]="meuFavorito"
+  (click)="onClick()"
+  >MUDA COR COM CLASS</i>
+</h1>
+
+<h1>
+  <i class="glyphicon"
+  [ngClass]="{
+    'colorBlue': !meuFavorito,
+    'colorRed': meuFavorito
+  }"
+  (click)="onClick()"
+  >MUDA COR COM NGCLASS</i>
+</h1>
